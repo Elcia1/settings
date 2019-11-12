@@ -1,5 +1,4 @@
 # Created by newuser for 5.7.1
-setopt no_beep
 export GTK_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export QT_IM_MODULE=fcitx
@@ -18,20 +17,13 @@ export LANG=ja_JP.UTF-8
 autoload -Uz colors
 colors
 
-# emacs 風キーバインドにする
-bindkey -e
-
 # ヒストリの設定
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
 # プロンプト
-# 1行表示
-# PROMPT="%~ %# "
-# 2行表示
-PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
-%# "
+PROMPT='%F{69}%n@%m%f:%~# '
 
 
 # 単語の区切り文字を指定する
@@ -152,7 +144,10 @@ elif which putclip >/dev/null 2>&1 ; then
     alias -g C='| putclip'
 fi
 
-
+#nvimの設定
+alias vim=nvim
+alias sudo='sudo '
+VISUAL=nvim; export VISUAL EDITOR=nvim; export EDITOR
 
 ########################################
 # OS 別の設定
@@ -167,5 +162,3 @@ case ${OSTYPE} in
         alias ls='ls -F --color=auto'
         ;;
 esac
-
-# vim:set ft=zsh:
