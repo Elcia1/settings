@@ -23,7 +23,9 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 
 # プロンプト
-PROMPT='%F{69}%n@%m%f:%~# '
+# 2行表示
+PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
+%# "
 
 
 # 単語の区切り文字を指定する
