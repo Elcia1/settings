@@ -1,12 +1,7 @@
-# Created by newuser for 5.7.1
+# fcitx setting
 export GTK_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 export QT_IM_MODULE=fcitx
-
-
-# 少し凝った zshrc
-# License : MIT
-# http://mollifier.mit-license.org/
 
 ########################################
 # 環境変数
@@ -24,7 +19,7 @@ SAVEHIST=1000000
 
 # プロンプト
 # 2行表示
-PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
+PROMPT="%{${fg[white]}%}[%n@%m]%{${reset_color}%} %~
 %# "
 
 
