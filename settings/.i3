@@ -1,1 +1,0 @@
-/home/elcia/.i3
